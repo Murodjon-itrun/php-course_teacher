@@ -1,0 +1,16 @@
+p {
+    font-size: 200%;
+    color: green;
+   } 
+   a {
+    background-color: red;
+   }
+   .h45 {
+    border: 2px solid black;
+   }
+   #zagolovok {
+    font-size: 250%;
+    color: blue;
+    border: 22px dashed green;
+    background-color: grey;
+   }

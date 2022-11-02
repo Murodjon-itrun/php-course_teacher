@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.caption-top {
+    width: 400px;
+    position: relative;
+    border: 5px solid #e06b2a;
+    margin: 50px auto 0;
+}
+
+.caption-top img {
+width: 400px;
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.caption-top h2 {
+    margin: 0;
+    color: #fff;
+    line-height: 1.1;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 20px 10px 10px;
+    border-bottom-right-radius: 40px;
+    background-color: #e06b2a;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 37px;
+    }
+    .date {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.7em;
+        top: -5px;
+        position: relative;
+    }
+
+    .list-ol {
+        margin: 50px auto 50px;
+       width: 200px;
+       counter-reset: li;
+       list-style: none;
+    }
+    .list-ol li { 
+        position: relative;
+        margin-bottom: 1.5em;
+        border: 3px solid #cadfcf;
+        padding: 0.6em;
+        border-radius: 5px;
+        background: #fefefe;
+        color: #231f20;
+        font-family: 'Lucida Sans',  sans-serif;
+                }
+
+    .list-ol li:before {
+        counter-increment: li;
+        position: absolute;
+        top: -0.7em;
+        content: counter(li);
+        border-radius: 50%;
+        color: #dcc24b;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        background: #fefefe;
+    }
+    body {
+        background-color: #dcc24b;
+    }
+
+    .list-ol li:after {
+        position: absolute;
+        top: 2em;
+        left: 150px;
+        content: 'PHP';
+        border-radius: 50%;
+        color: #dcc24b;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        background: #231414;
+    }
+
+    .mainDiv {
+        position: absolute;
+        left: 400px;
+    }
+    .mainDiv .topMenu {
+        background-color: #777;
+        color:#fff;
+        padding: 5px;
+        /*display: flex;*/
+    }
+
+    .mainDiv .topMenu li {
+        display: inline;
+        list-style: none;
+        margin: 5px;
+    }
+
+    .mainDiv .topMenu a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .mainDiv .topMenu a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .mainDiv .topMenu a:active {
+        color: rgb(22, 236, 86);
+    }
+
+    .mainDiv .topMenu a:visited {
+        color: rgb(213, 222, 28);
+    }

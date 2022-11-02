@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>РАБОТА С ФОРМАМЫ</title>
+</head>
+<body>
+    <h2 align="center">Регистрация</h2>
+    <form action="reg.php" method="POST" name="reg">
+        <fieldset title="personal info">
+            <legend>Ввод личных данных</legend>
+            <label>
+                Введите ваше имя:
+                <input type="text" name="firstname" size="15" maxlength="15">
+            </label>
+<br><br>
+            <label>
+                Введите вашу фамилю
+                <input type="text" name="lastname" placeholder="Иванов">
+            </label>
+
+            <br><br>
+            <label>
+                Введите пароль:
+                <input type="password" name="password" required>
+            </label>
+            
+        </fieldset title="Question 1">
+
+        <fieldset title="Question 1">
+            <legend>Вопросы</legend>
+            <label>
+                Сколько времени вы обычно спите?(в часах)
+                <br><br> <input type="radio" name="speel"> меньше 4
+               <br><br> <input type="radio" checked name="speel">4
+               <br><br> <input type="radio" sel name="speel">6
+               <br><br> <input type="radio" name="speel">8
+               <br><br> <input type="radio" name="speel">больше 8
+            </label>
+        </fieldset>
+
+        <fieldset title="Question 2">
+            <legend >Вопрос 2</legend>
+            <label>
+                Сколько времени вы обычно спите?(в часах)
+                <br><br> <input type="checkbox" name="kamaz4"> меньше 4
+               <br><br> <input type="checkbox" name="4">4
+               <br><br> <input type="checkbox" checked name="6">6
+               <br><br> <input type="checkbox" name="8">8
+               <br><br> <input type="checkbox" checked name="ziedaz8">больше 8
+            </label>
+        </fieldset>
+<br><br><br><br>
+        <fieldset title="Form select">
+            <legend>Вопрос 3</legend>
+            <label>
+               Выберите страну прожевание?
+               <select name="country" >
+                <option value="tjk" >Таджикистан</option>
+                <option value="uz">Узбекистан</option>
+                <option value="ch" selected >Китай</option>
+                <option value="ru" >Росссия</option>
+                <option value="chch" >Чехия</option>
+               </select>
+            </label>
+        </fieldset>
+        <br><br><br><br>
+
+
+        <br><br><br><br>
+        <fieldset title="Email">
+            <legend>Доп. инф.</legend>
+            <label>
+               Введите ваш емайл?
+               <br><br> <input type="email" name="email" 
+               placeholder="For example: it@run.tj" >
+            </label>
+
+            <label>
+               Выберите иконку вашего профиля:
+                <br><br> <input type="file" name="icon"  >
+             </label>
+        </fieldset>
+        <br><br><br><br>
+
+        
+        <br><br><br><br>
+        <fieldset title="Comment">
+            <legend>Комментария</legend>
+            <textarea cols="100" rows="10" name="commnet">
+
+            </textarea>
+        </fieldset>
+        <br><br><br><br>
+        <input type="submit" name="submit" value="Я все заполнил">
+        <input type="reset" name="reset" value="Сброс">
+        <button type="reset">Кнопка</button>
+    </form>
+</body>
+</html>
